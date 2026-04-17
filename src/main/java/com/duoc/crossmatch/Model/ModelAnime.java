@@ -3,6 +3,7 @@ package com.duoc.crossmatch.Model;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
@@ -14,8 +15,9 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "animes")
+@Table(name = "Animes")
 public class ModelAnime {
+    @Id
     @NotNull
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
@@ -26,7 +28,13 @@ public class ModelAnime {
     private String descripcion;
 
     @NotBlank
-    private String genero;
+    private String genero1;
+
+    @NotBlank
+    private String genero2;
+
+    @NotBlank
+    private String genero3;
 
     @NotBlank
     private String clasificacionEdad;
