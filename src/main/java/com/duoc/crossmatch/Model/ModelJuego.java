@@ -10,6 +10,7 @@ import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import com.duoc.crossmatch.modeljuego; 
 
 @Data
 @AllArgsConstructor
@@ -38,4 +39,7 @@ public class ModelJuego {
 
     @NotBlank
     private String clasificacionEdadJuego;
+
+    @ManyToMany(mappedBy = "anime")
+    private ModelJuego listAnime;
 }
