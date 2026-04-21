@@ -20,22 +20,22 @@ public class ModelJuego {
     @Id
     @NotNull
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private int idJuego;
 
     @NotBlank
-    private String nombre;
+    private String nombreJuego;
 
-    private String descripcion;
-
-    @NotBlank
-    private String genero1;
+    private String descripcionJuego;
 
     @NotBlank
-    private String genero2;
+    private String genero1Juego;
 
     @NotBlank
-    private String genero3;
+    private String genero2Juego;
 
     @NotBlank
-    private String clasificacionEdad;
+    private String genero3Juego;
+
+    @NotBlank
+    private String clasificacionEdadJuego;
 }

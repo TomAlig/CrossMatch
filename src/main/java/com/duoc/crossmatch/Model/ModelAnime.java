@@ -20,22 +20,22 @@ public class ModelAnime {
     @Id
     @NotNull
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private int idAnime;
 
     @NotBlank
-    private String nombre;
+    private String nombreAnime;
 
-    private String descripcion;
-
-    @NotBlank
-    private String genero1;
+    private String descripcionAnime;
 
     @NotBlank
-    private String genero2;
+    private String genero1Anime;
 
     @NotBlank
-    private String genero3;
+    private String genero2Anime;
 
     @NotBlank
-    private String clasificacionEdad;
+    private String genero3Anime;
+
+    @NotBlank
+    private String clasificacionEdadAnime;
 }
