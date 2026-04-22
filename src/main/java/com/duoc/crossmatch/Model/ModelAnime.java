@@ -1,21 +1,20 @@
 package com.duoc.crossmatch.Model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import java.util.List;
+import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import com.duoc.crossmatch.modeljuego; 
+
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "Animes")
+@Table(name = "animes")
+
 public class ModelAnime {
     @Id
     @NotNull
@@ -39,6 +38,6 @@ public class ModelAnime {
     @NotBlank
     private String clasificacionEdadAnime;
 
-    @ManyToMany(mappedBy = "juego")
-    private ModelJuego listJuego;
+    @ManyToMany()
+    private List<ModelJuego> listJuego;
 }
