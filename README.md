@@ -5,15 +5,15 @@ Proyecto Semestral - Desarrollo Fullstack 1 - Fecha de inicio: 08-04-2026
 CrossMatch es un trabajo en progreso para una pagina realizado en SpringBoot, (En primera instancia solo Backend) la cual tiene por objetivo realizar una recomendacion "cruzada" entre distintos anime y juegos.
 
 ### ¿Como funciona?
-La pagina va a tener dos apartados distintos, con la idea de que, si el usuario busca un juego que tenga parecido con algun anime que haya visto, se le de basado en el ingreso del nombre de dicho anime, esto funciona de la misma manera viceversa; Buscando un anime basado en un juego.
+La pagina va a tener dos apartados distintos, con la idea de que, si el usuario busca un juego que tenga parecido con algun anime que haya visto, se le de basado en el ingreso del nombre de dicho anime, esto funciona de la misma manera viceversa; buscando un anime basado en un juego.
 
 Esta comparacion se va a basar en etiquetas de genero, haciendo una coincidencia con respecto a 3 similitudes distintas.
-Se ordenara en orden de prioridad descendiente con la cantidad de similitudes entre objetos.
+En orden de prioridad descendiente a partir de la cantidad de similitudes entre objetos anime y juego.
 
 ### Futuro del Proyecto
-Este proyecto se esta desarrollando para una clase de Desarrollo Fullstack en donde se realiza en primera instancia el Backend sin una fecha de termino definida actualmente, este repositorio funciona como entregable para las evaluaciones del semestre y es necesario para el desarrollo de Fullstack 2. (Frontend)
+Este proyecto se esta desarrollando para una clase de "Desarrollo Fullstack" en donde se realiza en primera instancia el Backend sin una fecha de termino definida actualmente, este repositorio funciona como entregable para las evaluaciones del semestre y es necesario para el desarrollo de Fullstack 2. (Frontend)
 
-***Notas de Version** (Registro de los Commmits mas descriptivos)*  
+***Notas de Version** (Registro de los Commits mas descriptivos)*  
 
 08/04/2026 - Creacion del repositorio.  
 
