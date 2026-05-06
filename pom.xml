@@ -78,6 +78,11 @@
             <artifactId>mysql-connector-j</artifactId>
             <scope>runtime</scope>
         </dependency>
+		<!-- Comunica a SpringBoot y a la DB-->
+		<dependency> 
+    		<groupId>org.springframework.boot</groupId>
+    		<artifactId>spring-boot-starter-flyway</artifactId>
+		</dependency>
 	</dependencies>
 
 	<build>
