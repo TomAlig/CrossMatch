@@ -13,7 +13,7 @@ En orden de prioridad descendiente a partir de la cantidad de similitudes entre 
 ### Futuro del Proyecto
 Este proyecto se esta desarrollando para una clase de "Desarrollo Fullstack" en donde se realiza en primera instancia el Backend sin una fecha de termino definida actualmente, este repositorio funciona como entregable para las evaluaciones del semestre y es necesario para el desarrollo de Fullstack 2. (Frontend)
 
-***Notas de Version** (Registro de los Commits mas descriptivos)*  
+***Commit Log** (Registro de los Commits, mas descriptivo)*  
 
 08/04/2026 - Creacion del repositorio.  
 
@@ -23,8 +23,12 @@ Este proyecto se esta desarrollando para una clase de "Desarrollo Fullstack" en 
 
 17/04/2026 - Se modifican los nombres de las tablas y sus atributos para encajar mas con los requerimientos, tambien conectando a base de datos local en Laragon.  
 
-21/04/2026 - Se cambian los nombres de id para ser mas descriptivos, tambien se establece la relacion entre modelos y se actualiza README.
+21/04/2026 - Se cambian los nombres de id para ser mas descriptivos, tambien se establece la relacion entre modelos y tablas y se actualiza README.
 
+22/04/2026 - Se arregla la relacion entre los modelos y tablas.
 
+24/04/2026 - Se suben las bases de los repositorios.
 
+28/04/2026 -Se implementa Flyway, y se agregan las tablas respectivas para los modelos. 
 
+06/05/2026 -Se corrije la implementacion de Flyway y se añaden carpetas y archivos Service y Controller. (Se re-pushean en un solo Commit)
