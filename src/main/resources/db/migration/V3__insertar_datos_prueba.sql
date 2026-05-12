@@ -2,16 +2,16 @@
 -- #Animes
 
 INSERT INTO animes(nombre_anime, descripcion_anime, genero1_anime, genero2_anime, genero3_anime, clasificacion_edad_anime)
-VALUES ('Fullmetal Alchemist: Brotherhood', 'Los hermanos Elric rompieron uno de los más importantes tabúes de la alquimia, de modo que Ed perdió casi la mitad de su cuerpo, ahora reemplazado por partes mecánicas, y su hermano menor Al, quedó convertido en un alma ligada a una armadura. Ambos buscarán la forma de recuperar sus cuerpos, resolver uno de los grandes misterios de la alquimia y recuperar a su madre', 'acción', 'fantasía', 'thriller', '14+');
+VALUES ('Fullmetal Alchemist: Brotherhood', 'Los hermanos Elric rompieron uno de los más importantes tabúes de la alquimia, de modo que Ed perdió casi la mitad de su cuerpo, ahora reemplazado por partes mecánicas, y su hermano menor Al, quedó convertido en un alma ligada a una armadura.', 'acción', 'fantasía', 'thriller', '14+');
 
 INSERT INTO animes(nombre_anime, descripcion_anime, genero1_anime, genero2_anime, genero3_anime, clasificacion_edad_anime)
 VALUES ('My Hero Academia', 'En un mundo donde todos nacen con un Don, un joven sin él aspira a ser un gran héroe.', 'acción', 'shounen', 'fantasía', '14+');
 
 INSERT INTO animes(nombre_anime, descripcion_anime, genero1_anime, genero2_anime, genero3_anime, clasificacion_edad_anime)
-VALUES ('Detective Conan', 'Shinichi Kudo es hijo de un famoso escritor de novelas de misterio, pero él también tiene sus propias habilidades de genio, y es que pese a ser un adolescente, es un gran detective que ayuda a la policía a resolver muchos casos. Sus grandes capacidades de deducción le ayudan a resolver los más complicados casos criminales, pero cuando se cruza en el camino de cierta organización, le administra una droga experimental que lo convierte en un niño, así que no tiene más remedio que adoptar una nueva identidad e intentar encontrar a los responsables para volver a la normalidad.', 'aventura', 'drama', 'thriller', '14+');
+VALUES ('Detective Conan', 'Shinichi Kudo es un joven detective con gran talento para resolver crímenes. Tras cruzarse con una peligrosa organización, es obligado a tomar una droga que lo convierte en un niño, por lo que adopta una nueva identidad mientras busca a los responsables para recuperar su cuerpo.', 'aventura', 'drama', 'thriller', '14+');
 
 INSERT INTO animes(nombre_anime, descripcion_anime, genero1_anime, genero2_anime, genero3_anime, clasificacion_edad_anime)
-VALUES ('Haikyu!!', 'Haikyu!! es un anime deportivo protagonizado por Shoyo Hinata y su amor por el voleibol. Siendo de corta estatura, le inspira un jugador al que llamaban el "Pequeño Gigante", y decide jugar tal y como lo hizo él. En su último año de secundaria por fin consigue jugar su primer partido oficial, pero es...', 'comedia', 'shounen', 'deportes', '14+');
+VALUES ('Haikyu!!', 'Haikyu!! es un anime deportivo protagonizado por Shoyo Hinata y su amor por el voleibol. Siendo de corta estatura, le inspira un jugador al que llamaban el "Pequeño Gigante", y decide jugar tal y como lo hizo él. En su último año de secundaria por fin consigue jugar su primer partido oficial.', 'comedia', 'shounen', 'deportes', '14+');
 
 INSERT INTO animes(nombre_anime, descripcion_anime, genero1_anime, genero2_anime, genero3_anime, clasificacion_edad_anime)
 VALUES ('Attack on Titan', 'La humanidad resiste tras gigantescas murallas que la protegen de titanes come-humanos.', 'thriller', 'drama', 'acción', '16+');
