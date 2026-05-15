@@ -29,10 +29,10 @@ Este proyecto se esta desarrollando para una clase de "Desarrollo Fullstack" en 
 
 24/04/2026 - Se suben las bases de los repositorios.
 
-28/04/2026 -Se implementa Flyway, y se agregan las tablas respectivas para los modelos. 
+28/04/2026 - Se implementa Flyway, y se agregan las tablas respectivas para los modelos. 
 
-06/05/2026 -Se corrije la implementacion de Flyway y se añaden carpetas y archivos Service y Controller. (Se re-pushean en un solo Commit)
+06/05/2026 - Se corrige la implementación de Flyway y se añaden carpetas y archivos Service y Controller. (Se re-pushean en un solo Commit)
 
-11-14/05/2026 - En este tramo de trabajo, hubieron varias complicaciones en la implementacion de Flyway como migracion a la base de datos, por lo que optamos a utilizar solo hibernate con JPA.
+11-14/05/2026 - En este tramo de trabajo, hubo varias complicaciones en la implementación de Flyway como migración a la base de datos, por lo que optamos a utilizar solo hibernate con JPA.
 
-15/05/2026 - Se añade un DTO sin utilizar y uno para la api externa, su respectivos service, controller y config y un manejo de excepciones general con @RestControllerAdvice, ademas se hace la primera version del Postman Collection, 10 de anime y 10 de juegos, en principio no funcional.
+15/05/2026 - Se añade un DTO sin utilizar y uno para la api externa, sus respectivos service, controller y config y un manejo de excepciones general con @RestControllerAdvice. Ademas se hace la primera version de la coleccion de Postman, (10 de anime y 10 de juegos) en principio no funcional.
