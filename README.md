@@ -35,8 +35,6 @@ Las propiedades del proyecto (lo que se encuentra en src/main/resources/applicat
 
 ```
 spring.datasource.url=jdbc:mysql://localhost:3307/crossmatch?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=UTC
-spring.datasource.username=root
-spring.datasource.password=
 spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
 
 # Hibernate / JPA
@@ -48,7 +46,7 @@ spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQLDialect
 openmeteo.base-url=https://api.open-meteo.com
 ````
 
-El primer bloque de datos crea una base de datos en caso de no existir, y define usuario y contraseña que se utilizarán para la conexión a la base de datos.
+El primer bloque de código crea una base de datos en caso de que no exista, en el puerto local 3307 (conectando a Laragon).
 <br>
 En el segundo bloque tenemos la adición de Hibernate y JPA, lo que permite crear las tablas SQL y realizar el manejo de entidades y persistencia.
 <br>
