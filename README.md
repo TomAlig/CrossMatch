@@ -139,5 +139,6 @@ Se corrigieron commits asociados a usuarios incorrectos.
 
 **TomAlig, anabarcab-wq y carlossepulvedadiaz** - 15/05/2026 - Se añade un DTO sin utilizar y uno para la api externa, sus respectivos service, controller y config y un manejo de excepciones general con @RestControllerAdvice. Además se hace la primera versión de la colección de Postman, (10 de anime y 10 de juegos) en principio no funcional.
 
+**anabarcab-wq** - 20/05/2026 - Se actualiza postman agregando el CRUD actual y se comprueba su funcionamiento.
 
 </details>
