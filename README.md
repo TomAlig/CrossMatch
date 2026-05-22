@@ -141,4 +141,6 @@ Se corrigieron commits asociados a usuarios incorrectos.
 
 **anabarcab-wq** - 20/05/2026 - Se actualiza postman agregando el CRUD actual y se comprueba su funcionamiento.
 
+**anabarcab-wq** - 22/05/2026 - Se actualiza postman agregando WeatherAPI.
+
 </details>
