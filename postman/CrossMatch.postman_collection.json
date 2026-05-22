@@ -1,1377 +1,1449 @@
 {
-  "info": {
-    "_postman_id": "ba8e99d5-7cd5-489f-b65d-963b3323df56",
-    "name": "crossMatch",
-    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-    "_exporter_id": "54847286",
-    "_collection_link": "https://go.postman.co/collection/54847286-ba8e99d5-7cd5-489f-b65d-963b3323df56?source=collection_link"
-  },
-  "item": [
-    {
-      "name": "Animes",
-      "item": [
-        {
-          "name": "Lista anime",
-          "request": {
-            "method": "GET",
-            "header": [],
-            "url": {
-              "raw": "http://localhost:8080/api/v1/animes",
-              "protocol": "http",
-              "host": [
-                "localhost"
-              ],
-              "port": "8080",
-              "path": [
-                "api",
-                "v1",
-                "animes"
-              ]
-            }
-          },
-          "response": []
-        },
-        {
-          "name": "Buscar anime por ID",
-          "request": {
-            "method": "GET",
-            "header": [],
-            "url": {
-              "raw": "http://localhost:8080/api/v1/animes/1",
-              "protocol": "http",
-              "host": [
-                "localhost"
-              ],
-              "port": "8080",
-              "path": [
-                "api",
-                "v1",
-                "animes",
-                "1"
-              ]
-            }
-          },
-          "response": []
-        },
-        {
-          "name": "Añadir anime",
-          "request": {
-            "method": "POST",
-            "header": [],
-            "body": {
-              "mode": "raw",
-              "raw": " {\r\n    \"nombreAnime\": \"Detective Conan\",\r\n    \"descripcionAnime\": \"Shinichi encoge por una droga, cambia de identidad aún niño  y busca recuperar su cuerpo.\",\r\n    \"genero1Anime\": \"aventura\",\r\n    \"genero2Anime\": \"drama\",\r\n    \"genero3Anime\": \"thriller\",\r\n    \"clasificacionEdadAnime\": \"14+\"\r\n  }\r\n",
-              "options": {
-                "raw": {
-                  "language": "json"
-                }
-              }
-            },
-            "url": {
-              "raw": "http://localhost:8080/api/v1/animes",
-              "protocol": "http",
-              "host": [
-                "localhost"
-              ],
-              "port": "8080",
-              "path": [
-                "api",
-                "v1",
-                "animes"
-              ]
-            }
-          },
-          "response": [
-            {
-              "name": "Anime 1",
-              "originalRequest": {
-                "method": "POST",
-                "header": [],
-                "body": {
-                  "mode": "raw",
-                  "raw": " {\r\n    \"nombreAnime\": \"Fullmetal Alchemist: Brotherhood\",\r\n    \"descripcionAnime\": \"Por un tabú alquímico, Ed pierde su cuerpo y Al es ligado a una armadura.\",\r\n    \"genero1Anime\": \"acción\",\r\n    \"genero2Anime\": \"fantasía\",\r\n    \"genero3Anime\": \"thriller\",\r\n    \"clasificacionEdadAnime\": \"14+\"\r\n  }\r\n",
-                  "options": {
-                    "raw": {
-                      "language": "json"
-                    }
-                  }
-                },
-                "url": {
-                  "raw": "http://localhost:8080/api/v1/animes",
-                  "protocol": "http",
-                  "host": [
-                    "localhost"
-                  ],
-                  "port": "8080",
-                  "path": [
-                    "api",
-                    "v1",
-                    "animes"
-                  ]
-                }
-              },
-              "status": "Created",
-              "code": 201,
-              "_postman_previewlanguage": "json",
-              "header": [
-                {
-                  "key": "Content-Type",
-                  "value": "application/json"
-                },
-                {
-                  "key": "Transfer-Encoding",
-                  "value": "chunked"
-                },
-                {
-                  "key": "Date",
-                  "value": "Wed, 20 May 2026 16:50:25 GMT"
-                },
-                {
-                  "key": "Keep-Alive",
-                  "value": "timeout=60"
-                },
-                {
-                  "key": "Connection",
-                  "value": "keep-alive"
-                }
-              ],
-              "cookie": [],
-              "body": "{\n    \"idAnime\": 1,\n    \"nombreAnime\": \"Fullmetal Alchemist: Brotherhood\",\n    \"descripcionAnime\": \"Por un tabú alquímico, Ed pierde su cuerpo y Al es ligado a una armadura.\",\n    \"genero1Anime\": \"acción\",\n    \"genero2Anime\": \"fantasía\",\n    \"genero3Anime\": \"thriller\",\n    \"clasificacionEdadAnime\": \"14+\",\n    \"listJuego\": null\n}"
-            },
-            {
-              "name": "Anime 2",
-              "originalRequest": {
-                "method": "POST",
-                "header": [],
-                "body": {
-                  "mode": "raw",
-                  "raw": "{\r\n    \"nombreAnime\": \"My Hero Academia\",\r\n    \"descripcionAnime\": \"En un mundo donde todos nacen con un Don, un joven sin él aspira a ser un gran héroe.\",\r\n    \"genero1Anime\": \"acción\",\r\n    \"genero2Anime\": \"shounen\",\r\n    \"genero3Anime\": \"fantasía\",\r\n    \"clasificacionEdadAnime\": \"14+\"\r\n  }\r\n",
-                  "options": {
-                    "raw": {
-                      "language": "json"
-                    }
-                  }
-                },
-                "url": {
-                  "raw": "http://localhost:8080/api/v1/animes",
-                  "protocol": "http",
-                  "host": [
-                    "localhost"
-                  ],
-                  "port": "8080",
-                  "path": [
-                    "api",
-                    "v1",
-                    "animes"
-                  ]
-                }
-              },
-              "status": "Created",
-              "code": 201,
-              "_postman_previewlanguage": "json",
-              "header": [
-                {
-                  "key": "Content-Type",
-                  "value": "application/json"
-                },
-                {
-                  "key": "Transfer-Encoding",
-                  "value": "chunked"
-                },
-                {
-                  "key": "Date",
-                  "value": "Wed, 20 May 2026 16:51:38 GMT"
-                },
-                {
-                  "key": "Keep-Alive",
-                  "value": "timeout=60"
-                },
-                {
-                  "key": "Connection",
-                  "value": "keep-alive"
-                }
-              ],
-              "cookie": [],
-              "body": "{\n    \"idAnime\": 2,\n    \"nombreAnime\": \"My Hero Academia\",\n    \"descripcionAnime\": \"En un mundo donde todos nacen con un Don, un joven sin él aspira a ser un gran héroe.\",\n    \"genero1Anime\": \"acción\",\n    \"genero2Anime\": \"shounen\",\n    \"genero3Anime\": \"fantasía\",\n    \"clasificacionEdadAnime\": \"14+\",\n    \"listJuego\": null\n}"
-            },
-            {
-              "name": "Anime 3",
-              "originalRequest": {
-                "method": "POST",
-                "header": [],
-                "body": {
-                  "mode": "raw",
-                  "raw": "  {\r\n    \"nombreAnime\": \"Haikyu!!\",\r\n    \"descripcionAnime\": \"Hinata, voleibolista de baja estatura, debutó en secundaria.Inspirado por el 'Pequeño Gigante', el bajito Hinata debuta en el voleibol.\",\r\n    \"genero1Anime\": \"comedia\",\r\n    \"genero2Anime\": \"shounen\",\r\n    \"genero3Anime\": \"deportes\",\r\n    \"clasificacionEdadAnime\": \"14+\"\r\n  }\r\n\r\n",
-                  "options": {
-                    "raw": {
-                      "language": "json"
-                    }
-                  }
-                },
-                "url": {
-                  "raw": "http://localhost:8080/api/v1/animes",
-                  "protocol": "http",
-                  "host": [
-                    "localhost"
-                  ],
-                  "port": "8080",
-                  "path": [
-                    "api",
-                    "v1",
-                    "animes"
-                  ]
-                }
-              },
-              "status": "Created",
-              "code": 201,
-              "_postman_previewlanguage": null,
-              "header": [
-                {
-                  "key": "Content-Type",
-                  "value": "application/json"
-                },
-                {
-                  "key": "Transfer-Encoding",
-                  "value": "chunked"
-                },
-                {
-                  "key": "Date",
-                  "value": "Wed, 20 May 2026 20:28:00 GMT"
-                },
-                {
-                  "key": "Keep-Alive",
-                  "value": "timeout=60"
-                },
-                {
-                  "key": "Connection",
-                  "value": "keep-alive"
-                }
-              ],
-              "cookie": [],
-              "body": "{\n    \"idAnime\": 3,\n    \"nombreAnime\": \"Haikyu!!\",\n    \"descripcionAnime\": \"Hinata, voleibolista de baja estatura, debutó en secundaria.Inspirado por el 'Pequeño Gigante', el bajito Hinata debuta en el voleibol.\",\n    \"genero1Anime\": \"comedia\",\n    \"genero2Anime\": \"shounen\",\n    \"genero3Anime\": \"deportes\",\n    \"clasificacionEdadAnime\": \"14+\",\n    \"listJuego\": null\n}"
-            },
-            {
-              "name": "Anime 4",
-              "originalRequest": {
-                "method": "POST",
-                "header": [],
-                "body": {
-                  "mode": "raw",
-                  "raw": " {\r\n    \"nombreAnime\": \"Attack on Titan\",\r\n    \"descripcionAnime\": \"La humanidad resiste tras gigantescas murallas que la protegen de titanes come-humanos.\",\r\n    \"genero1Anime\": \"thriller\",\r\n    \"genero2Anime\": \"drama\",\r\n    \"genero3Anime\": \"acción\",\r\n    \"clasificacionEdadAnime\": \"16+\"\r\n  }",
-                  "options": {
-                    "raw": {
-                      "language": "json"
-                    }
-                  }
-                },
-                "url": {
-                  "raw": "http://localhost:8080/api/v1/animes",
-                  "protocol": "http",
-                  "host": [
-                    "localhost"
-                  ],
-                  "port": "8080",
-                  "path": [
-                    "api",
-                    "v1",
-                    "animes"
-                  ]
-                }
-              },
-              "status": "Created",
-              "code": 201,
-              "_postman_previewlanguage": null,
-              "header": [
-                {
-                  "key": "Content-Type",
-                  "value": "application/json"
-                },
-                {
-                  "key": "Transfer-Encoding",
-                  "value": "chunked"
-                },
-                {
-                  "key": "Date",
-                  "value": "Wed, 20 May 2026 20:31:19 GMT"
-                },
-                {
-                  "key": "Keep-Alive",
-                  "value": "timeout=60"
-                },
-                {
-                  "key": "Connection",
-                  "value": "keep-alive"
-                }
-              ],
-              "cookie": [],
-              "body": "{\n    \"idAnime\": 4,\n    \"nombreAnime\": \"Attack on Titan\",\n    \"descripcionAnime\": \"La humanidad resiste tras gigantescas murallas que la protegen de titanes come-humanos.\",\n    \"genero1Anime\": \"thriller\",\n    \"genero2Anime\": \"drama\",\n    \"genero3Anime\": \"acción\",\n    \"clasificacionEdadAnime\": \"16+\",\n    \"listJuego\": null\n}"
-            },
-            {
-              "name": "Anime 5",
-              "originalRequest": {
-                "method": "POST",
-                "header": [],
-                "body": {
-                  "mode": "raw",
-                  "raw": " {\r\n    \"nombreAnime\": \"Black Clover\",\r\n    \"descripcionAnime\": \"En un mundo en el que la magia lo es todo, Asta y Yuno son dos niños que se encuentran abandonados el mismo día en una iglesia. Asta crece sin magia y Yuno crece demostrando tener unos grandes poderes mágicos\",\r\n    \"genero1Anime\": \"comedia\",\r\n    \"genero2Anime\": \"acción\",\r\n    \"genero3Anime\": \"fantasía\",\r\n    \"clasificacionEdadAnime\": \"14+\"\r\n  }",
-                  "options": {
-                    "raw": {
-                      "language": "json"
-                    }
-                  }
-                },
-                "url": {
-                  "raw": "http://localhost:8080/api/v1/animes",
-                  "protocol": "http",
-                  "host": [
-                    "localhost"
-                  ],
-                  "port": "8080",
-                  "path": [
-                    "api",
-                    "v1",
-                    "animes"
-                  ]
-                }
-              },
-              "status": "Created",
-              "code": 201,
-              "_postman_previewlanguage": null,
-              "header": [
-                {
-                  "key": "Content-Type",
-                  "value": "application/json"
-                },
-                {
-                  "key": "Transfer-Encoding",
-                  "value": "chunked"
-                },
-                {
-                  "key": "Date",
-                  "value": "Wed, 20 May 2026 20:31:50 GMT"
-                },
-                {
-                  "key": "Keep-Alive",
-                  "value": "timeout=60"
-                },
-                {
-                  "key": "Connection",
-                  "value": "keep-alive"
-                }
-              ],
-              "cookie": [],
-              "body": "{\n    \"idAnime\": 5,\n    \"nombreAnime\": \"Black Clover\",\n    \"descripcionAnime\": \"En un mundo en el que la magia lo es todo, Asta y Yuno son dos niños que se encuentran abandonados el mismo día en una iglesia. Asta crece sin magia y Yuno crece demostrando tener unos grandes poderes mágicos\",\n    \"genero1Anime\": \"comedia\",\n    \"genero2Anime\": \"acción\",\n    \"genero3Anime\": \"fantasía\",\n    \"clasificacionEdadAnime\": \"14+\",\n    \"listJuego\": null\n}"
-            },
-            {
-              "name": "Anime 6",
-              "originalRequest": {
-                "method": "POST",
-                "header": [],
-                "body": {
-                  "mode": "raw",
-                  "raw": " {\r\n    \"nombreAnime\": \"JUJUTSU KAISEN\",\r\n    \"descripcionAnime\": \"Yuji Itadori conoce el mundo de las Maldiciones al tragarse el dedo del Rey de las Maldiciones.\",\r\n    \"genero1Anime\": \"acción\",\r\n    \"genero2Anime\": \"shounen\",\r\n    \"genero3Anime\": \"drama\",\r\n    \"clasificacionEdadAnime\": \"16+\"\r\n  }\r\n",
-                  "options": {
-                    "raw": {
-                      "language": "json"
-                    }
-                  }
-                },
-                "url": {
-                  "raw": "http://localhost:8080/api/v1/animes",
-                  "protocol": "http",
-                  "host": [
-                    "localhost"
-                  ],
-                  "port": "8080",
-                  "path": [
-                    "api",
-                    "v1",
-                    "animes"
-                  ]
-                }
-              },
-              "status": "Created",
-              "code": 201,
-              "_postman_previewlanguage": null,
-              "header": [
-                {
-                  "key": "Content-Type",
-                  "value": "application/json"
-                },
-                {
-                  "key": "Transfer-Encoding",
-                  "value": "chunked"
-                },
-                {
-                  "key": "Date",
-                  "value": "Wed, 20 May 2026 20:32:18 GMT"
-                },
-                {
-                  "key": "Keep-Alive",
-                  "value": "timeout=60"
-                },
-                {
-                  "key": "Connection",
-                  "value": "keep-alive"
-                }
-              ],
-              "cookie": [],
-              "body": "{\n    \"idAnime\": 6,\n    \"nombreAnime\": \"JUJUTSU KAISEN\",\n    \"descripcionAnime\": \"Yuji Itadori conoce el mundo de las Maldiciones al tragarse el dedo del Rey de las Maldiciones.\",\n    \"genero1Anime\": \"acción\",\n    \"genero2Anime\": \"shounen\",\n    \"genero3Anime\": \"drama\",\n    \"clasificacionEdadAnime\": \"16+\",\n    \"listJuego\": null\n}"
-            },
-            {
-              "name": "Anime 7",
-              "originalRequest": {
-                "method": "POST",
-                "header": [],
-                "body": {
-                  "mode": "raw",
-                  "raw": " {\r\n    \"nombreAnime\": \"HunterXHunter\",\r\n    \"descripcionAnime\": \"La historia sigue a Gon Freecss, un joven que descubre que su padre, a quien creía muerto.\",\r\n    \"genero1Anime\": \"aventura\",\r\n    \"genero2Anime\": \"drama\",\r\n    \"genero3Anime\": \"acción\",\r\n    \"clasificacionEdadAnime\": \"+12\"\r\n  }\r\n\r\n",
-                  "options": {
-                    "raw": {
-                      "language": "json"
-                    }
-                  }
-                },
-                "url": {
-                  "raw": "http://localhost:8080/api/v1/animes",
-                  "protocol": "http",
-                  "host": [
-                    "localhost"
-                  ],
-                  "port": "8080",
-                  "path": [
-                    "api",
-                    "v1",
-                    "animes"
-                  ]
-                }
-              },
-              "status": "Created",
-              "code": 201,
-              "_postman_previewlanguage": null,
-              "header": [
-                {
-                  "key": "Content-Type",
-                  "value": "application/json"
-                },
-                {
-                  "key": "Transfer-Encoding",
-                  "value": "chunked"
-                },
-                {
-                  "key": "Date",
-                  "value": "Wed, 20 May 2026 20:32:47 GMT"
-                },
-                {
-                  "key": "Keep-Alive",
-                  "value": "timeout=60"
-                },
-                {
-                  "key": "Connection",
-                  "value": "keep-alive"
-                }
-              ],
-              "cookie": [],
-              "body": "{\n    \"idAnime\": 7,\n    \"nombreAnime\": \"HunterXHunter\",\n    \"descripcionAnime\": \"La historia sigue a Gon Freecss, un joven que descubre que su padre, a quien creía muerto.\",\n    \"genero1Anime\": \"aventura\",\n    \"genero2Anime\": \"drama\",\n    \"genero3Anime\": \"acción\",\n    \"clasificacionEdadAnime\": \"+12\",\n    \"listJuego\": null\n}"
-            },
-            {
-              "name": "Anime 8",
-              "originalRequest": {
-                "method": "POST",
-                "header": [],
-                "body": {
-                  "mode": "raw",
-                  "raw": "  {\r\n    \"nombreAnime\": \"SwordArt Online\",\r\n    \"descripcionAnime\": \"Atrapado en un juego de realidad virtual donde morir es real. Kirito y miles de jugadores caen atrapados en un juego donde morir es real.\" ,\r\n    \"genero1Anime\": \"fantasía\",\r\n    \"genero2Anime\": \"acción\",\r\n    \"genero3Anime\": \"shounen\",\r\n    \"clasificacionEdadAnime\": \"+12\"\r\n  }\r\n\r\n",
-                  "options": {
-                    "raw": {
-                      "language": "json"
-                    }
-                  }
-                },
-                "url": {
-                  "raw": "http://localhost:8080/api/v1/animes",
-                  "protocol": "http",
-                  "host": [
-                    "localhost"
-                  ],
-                  "port": "8080",
-                  "path": [
-                    "api",
-                    "v1",
-                    "animes"
-                  ]
-                }
-              },
-              "status": "Created",
-              "code": 201,
-              "_postman_previewlanguage": null,
-              "header": [
-                {
-                  "key": "Content-Type",
-                  "value": "application/json"
-                },
-                {
-                  "key": "Transfer-Encoding",
-                  "value": "chunked"
-                },
-                {
-                  "key": "Date",
-                  "value": "Wed, 20 May 2026 20:33:10 GMT"
-                },
-                {
-                  "key": "Keep-Alive",
-                  "value": "timeout=60"
-                },
-                {
-                  "key": "Connection",
-                  "value": "keep-alive"
-                }
-              ],
-              "cookie": [],
-              "body": "{\n    \"idAnime\": 8,\n    \"nombreAnime\": \"SwordArt Online\",\n    \"descripcionAnime\": \"Atrapado en un juego de realidad virtual donde morir es real. Kirito y miles de jugadores caen atrapados en un juego donde morir es real.\",\n    \"genero1Anime\": \"fantasía\",\n    \"genero2Anime\": \"acción\",\n    \"genero3Anime\": \"shounen\",\n    \"clasificacionEdadAnime\": \"+12\",\n    \"listJuego\": null\n}"
-            },
-            {
-              "name": "Anime 9",
-              "originalRequest": {
-                "method": "POST",
-                "header": [],
-                "body": {
-                  "mode": "raw",
-                  "raw": "  {\r\n    \"nombreAnime\": \"Berserk\",\r\n    \"descripcionAnime\": \"La historia sigue a Guts, un guerrero solitario marcado por un pasado brutal, mientras lucha contra criaturas demoníacas y enfrenta temas como la venganza, el destino y la supervivencia.\",\r\n    \"genero1Anime\": \"acción\",\r\n    \"genero2Anime\": \"fantasía\",\r\n    \"genero3Anime\": \"thriller\",\r\n    \"clasificacionEdadAnime\": \"+18\"\r\n  }\r\n",
-                  "options": {
-                    "raw": {
-                      "language": "json"
-                    }
-                  }
-                },
-                "url": {
-                  "raw": "http://localhost:8080/api/v1/animes",
-                  "protocol": "http",
-                  "host": [
-                    "localhost"
-                  ],
-                  "port": "8080",
-                  "path": [
-                    "api",
-                    "v1",
-                    "animes"
-                  ]
-                }
-              },
-              "status": "Created",
-              "code": 201,
-              "_postman_previewlanguage": null,
-              "header": [
-                {
-                  "key": "Content-Type",
-                  "value": "application/json"
-                },
-                {
-                  "key": "Transfer-Encoding",
-                  "value": "chunked"
-                },
-                {
-                  "key": "Date",
-                  "value": "Wed, 20 May 2026 20:33:37 GMT"
-                },
-                {
-                  "key": "Keep-Alive",
-                  "value": "timeout=60"
-                },
-                {
-                  "key": "Connection",
-                  "value": "keep-alive"
-                }
-              ],
-              "cookie": [],
-              "body": "{\n    \"idAnime\": 9,\n    \"nombreAnime\": \"Berserk\",\n    \"descripcionAnime\": \"La historia sigue a Guts, un guerrero solitario marcado por un pasado brutal, mientras lucha contra criaturas demoníacas y enfrenta temas como la venganza, el destino y la supervivencia.\",\n    \"genero1Anime\": \"acción\",\n    \"genero2Anime\": \"fantasía\",\n    \"genero3Anime\": \"thriller\",\n    \"clasificacionEdadAnime\": \"+18\",\n    \"listJuego\": null\n}"
-            },
-            {
-              "name": "Anime 10",
-              "originalRequest": {
-                "method": "POST",
-                "header": [],
-                "body": {
-                  "mode": "raw",
-                  "raw": " {\r\n    \"nombreAnime\": \"Detective Conan\",\r\n    \"descripcionAnime\": \"Shinichi encoge por una droga, cambia de identidad aún niño  y busca recuperar su cuerpo.\",\r\n    \"genero1Anime\": \"aventura\",\r\n    \"genero2Anime\": \"drama\",\r\n    \"genero3Anime\": \"thriller\",\r\n    \"clasificacionEdadAnime\": \"14+\"\r\n  }\r\n",
-                  "options": {
-                    "raw": {
-                      "language": "json"
-                    }
-                  }
-                },
-                "url": {
-                  "raw": "http://localhost:8080/api/v1/animes",
-                  "protocol": "http",
-                  "host": [
-                    "localhost"
-                  ],
-                  "port": "8080",
-                  "path": [
-                    "api",
-                    "v1",
-                    "animes"
-                  ]
-                }
-              },
-              "status": "Created",
-              "code": 201,
-              "_postman_previewlanguage": null,
-              "header": [
-                {
-                  "key": "Content-Type",
-                  "value": "application/json"
-                },
-                {
-                  "key": "Transfer-Encoding",
-                  "value": "chunked"
-                },
-                {
-                  "key": "Date",
-                  "value": "Wed, 20 May 2026 20:35:19 GMT"
-                },
-                {
-                  "key": "Keep-Alive",
-                  "value": "timeout=60"
-                },
-                {
-                  "key": "Connection",
-                  "value": "keep-alive"
-                }
-              ],
-              "cookie": [],
-              "body": "{\n    \"idAnime\": 10,\n    \"nombreAnime\": \"Detective Conan\",\n    \"descripcionAnime\": \"Shinichi encoge por una droga, cambia de identidad aún niño  y busca recuperar su cuerpo.\",\n    \"genero1Anime\": \"aventura\",\n    \"genero2Anime\": \"drama\",\n    \"genero3Anime\": \"thriller\",\n    \"clasificacionEdadAnime\": \"14+\",\n    \"listJuego\": null\n}"
-            }
-          ]
-        },
-        {
-          "name": "Actualizar anime",
-          "request": {
-            "method": "PUT",
-            "header": [],
-            "url": {
-              "raw": "http://localhost:8080/api/v1/animes/1",
-              "protocol": "http",
-              "host": [
-                "localhost"
-              ],
-              "port": "8080",
-              "path": [
-                "api",
-                "v1",
-                "animes",
-                "1"
-              ]
-            }
-          },
-          "response": []
-        },
-        {
-          "name": "Eliminar anime",
-          "request": {
-            "method": "DELETE",
-            "header": [],
-            "url": {
-              "raw": "http://localhost:8080/api/v1/animes/2",
-              "protocol": "http",
-              "host": [
-                "localhost"
-              ],
-              "port": "8080",
-              "path": [
-                "api",
-                "v1",
-                "animes",
-                "2"
-              ]
-            }
-          },
-          "response": []
-        }
-      ]
-    },
-    {
-      "name": "Juegos",
-      "item": [
-        {
-          "name": "Lista juego",
-          "request": {
-            "method": "GET",
-            "header": [],
-            "url": {
-              "raw": "http://localhost:8080/api/v1/juegos",
-              "protocol": "http",
-              "host": [
-                "localhost"
-              ],
-              "port": "8080",
-              "path": [
-                "api",
-                "v1",
-                "juegos"
-              ]
-            }
-          },
-          "response": []
-        },
-        {
-          "name": "Buscar juego por ID",
-          "request": {
-            "method": "GET",
-            "header": [],
-            "url": {
-              "raw": "http://localhost:8080/api/v1/juegos/2",
-              "protocol": "http",
-              "host": [
-                "localhost"
-              ],
-              "port": "8080",
-              "path": [
-                "api",
-                "v1",
-                "juegos",
-                "2"
-              ]
-            }
-          },
-          "response": []
-        },
-        {
-          "name": "Añadir juego",
-          "request": {
-            "method": "POST",
-            "header": [],
-            "body": {
-              "mode": "raw",
-              "raw": "  {\r\n    \"nombreJuego\": \"Final Fantasy XVI\",\r\n    \"descripcionJuego\": \"RPG de acción ambientado en el mundo de Valisthea, una tierra dividida por reinos que luchan por el control de los Cristales Madre, fuentes de magia y poder. La historia sigue a Clive Rosfield, un guerrero marcado por la tragedia y la venganza.\",\r\n    \"genero1Juego\": \"acción\",\r\n    \"genero2Juego\": \"fantasía\",\r\n    \"genero3Juego\": \"thriller\",\r\n    \"clasificacionEdadJuego\": \"+17\"\r\n  }\r\n",
-              "options": {
-                "raw": {
-                  "language": "json"
-                }
-              }
-            },
-            "url": {
-              "raw": "http://localhost:8080/api/v1/juegos",
-              "protocol": "http",
-              "host": [
-                "localhost"
-              ],
-              "port": "8080",
-              "path": [
-                "api",
-                "v1",
-                "juegos"
-              ]
-            }
-          },
-          "response": [
-            {
-              "name": "Juego 1",
-              "originalRequest": {
-                "method": "POST",
-                "header": [],
-                "body": {
-                  "mode": "raw",
-                  "raw": "{\r\n    \"nombreJuego\": \"The witcher 3: Wild hunt\",\r\n    \"descripcionJuego\": \"Geralt de Rivia se ve enfrentado a su pasado tras recuperar la memoria, junto con la inesperada aparición de su hija adoptiva\",\r\n    \"genero1Juego\": \"drama\",\r\n    \"genero2Juego\": \"acción\",\r\n    \"genero3Juego\": \"fantasía\",\r\n    \"clasificacionEdadJuego\": \"+18\"\r\n  }\r\n",
-                  "options": {
-                    "raw": {
-                      "language": "json"
-                    }
-                  }
-                },
-                "url": {
-                  "raw": "http://localhost:8080/api/v1/juegos",
-                  "protocol": "http",
-                  "host": [
-                    "localhost"
-                  ],
-                  "port": "8080",
-                  "path": [
-                    "api",
-                    "v1",
-                    "juegos"
-                  ]
-                }
-              },
-              "status": "Created",
-              "code": 201,
-              "_postman_previewlanguage": "json",
-              "header": [
-                {
-                  "key": "Content-Type",
-                  "value": "application/json"
-                },
-                {
-                  "key": "Transfer-Encoding",
-                  "value": "chunked"
-                },
-                {
-                  "key": "Date",
-                  "value": "Wed, 20 May 2026 16:57:12 GMT"
-                },
-                {
-                  "key": "Keep-Alive",
-                  "value": "timeout=60"
-                },
-                {
-                  "key": "Connection",
-                  "value": "keep-alive"
-                }
-              ],
-              "cookie": [],
-              "body": "{\n    \"idJuego\": 1,\n    \"nombreJuego\": \"The witcher 3: Wild hunt\",\n    \"descripcionJuego\": \"Geralt de Rivia se ve enfrentado a su pasado tras recuperar la memoria, junto con la inesperada aparición de su hija adoptiva\",\n    \"genero1Juego\": \"drama\",\n    \"genero2Juego\": \"acción\",\n    \"genero3Juego\": \"fantasía\",\n    \"clasificacionEdadJuego\": \"+18\",\n    \"listAnime\": null\n}"
-            },
-            {
-              "name": "Juego 2",
-              "originalRequest": {
-                "method": "POST",
-                "header": [],
-                "body": {
-                  "mode": "raw",
-                  "raw": "{\r\n    \"nombreJuego\": \"Clair Obscur: Expedition 33\",\r\n    \"descripcionJuego\": \"La historia sigue a gustave y su equipo en una misión por destruir a la “pintora”, una entidad que cada año borra de la existencia a personas de cierta edad\",\r\n    \"genero1Juego\": \"acción\",\r\n    \"genero2Juego\": \"fantasía\",\r\n    \"genero3Juego\": \"drama\",\r\n    \"clasificacionEdadJuego\": \"+16\"\r\n  }\r\n\r\n",
-                  "options": {
-                    "raw": {
-                      "language": "json"
-                    }
-                  }
-                },
-                "url": {
-                  "raw": "http://localhost:8080/api/v1/juegos",
-                  "protocol": "http",
-                  "host": [
-                    "localhost"
-                  ],
-                  "port": "8080",
-                  "path": [
-                    "api",
-                    "v1",
-                    "juegos"
-                  ]
-                }
-              },
-              "status": "Created",
-              "code": 201,
-              "_postman_previewlanguage": "json",
-              "header": [
-                {
-                  "key": "Content-Type",
-                  "value": "application/json"
-                },
-                {
-                  "key": "Transfer-Encoding",
-                  "value": "chunked"
-                },
-                {
-                  "key": "Date",
-                  "value": "Wed, 20 May 2026 16:57:29 GMT"
-                },
-                {
-                  "key": "Keep-Alive",
-                  "value": "timeout=60"
-                },
-                {
-                  "key": "Connection",
-                  "value": "keep-alive"
-                }
-              ],
-              "cookie": [],
-              "body": "{\n    \"idJuego\": 2,\n    \"nombreJuego\": \"Clair Obscur: Expedition 33\",\n    \"descripcionJuego\": \"La historia sigue a gustave y su equipo en una misión por destruir a la “pintora”, una entidad que cada año borra de la existencia a personas de cierta edad\",\n    \"genero1Juego\": \"acción\",\n    \"genero2Juego\": \"fantasía\",\n    \"genero3Juego\": \"drama\",\n    \"clasificacionEdadJuego\": \"+16\",\n    \"listAnime\": null\n}"
-            },
-            {
-              "name": "Juego 3",
-              "originalRequest": {
-                "method": "POST",
-                "header": [],
-                "body": {
-                  "mode": "raw",
-                  "raw": "  {\r\n    \"nombreJuego\": \"Resident evil 4\",\r\n    \"descripcionJuego\": \"Leon S Kennedy vuelve a ser el protagonista de la saga una vez más pero ahora en españa, todo esto debido al extraño secuestro de la hija del presidente\",\r\n    \"genero1Juego\": \"acción\",\r\n    \"genero2Juego\": \"thriller\",\r\n    \"genero3Juego\": \"drama\",\r\n    \"clasificacionEdadJuego\": \"+17\"\r\n  }\r\n\r\n\r\n",
-                  "options": {
-                    "raw": {
-                      "language": "json"
-                    }
-                  }
-                },
-                "url": {
-                  "raw": "http://localhost:8080/api/v1/juegos",
-                  "protocol": "http",
-                  "host": [
-                    "localhost"
-                  ],
-                  "port": "8080",
-                  "path": [
-                    "api",
-                    "v1",
-                    "juegos"
-                  ]
-                }
-              },
-              "status": "Created",
-              "code": 201,
-              "_postman_previewlanguage": null,
-              "header": [
-                {
-                  "key": "Content-Type",
-                  "value": "application/json"
-                },
-                {
-                  "key": "Transfer-Encoding",
-                  "value": "chunked"
-                },
-                {
-                  "key": "Date",
-                  "value": "Wed, 20 May 2026 20:36:23 GMT"
-                },
-                {
-                  "key": "Keep-Alive",
-                  "value": "timeout=60"
-                },
-                {
-                  "key": "Connection",
-                  "value": "keep-alive"
-                }
-              ],
-              "cookie": [],
-              "body": "{\n    \"idJuego\": 1,\n    \"nombreJuego\": \"Resident evil 4\",\n    \"descripcionJuego\": \"Leon S Kennedy vuelve a ser el protagonista de la saga una vez más pero ahora en españa, todo esto debido al extraño secuestro de la hija del presidente\",\n    \"genero1Juego\": \"acción\",\n    \"genero2Juego\": \"thriller\",\n    \"genero3Juego\": \"drama\",\n    \"clasificacionEdadJuego\": \"+17\",\n    \"listAnime\": null\n}"
-            },
-            {
-              "name": "Juego 4",
-              "originalRequest": {
-                "method": "POST",
-                "header": [],
-                "body": {
-                  "mode": "raw",
-                  "raw": " {\r\n    \"nombreJuego\": \"Minecraft\",\r\n    \"descripcionJuego\": \"Juego de construcción y supervivencia donde explorar mundos abiertos, recolectar recursos y crear todo tipo de estructuras solo o con amigos.\",\r\n    \"genero1Juego\": \"acción\",\r\n    \"genero2Juego\": \"aventura\",\r\n    \"genero3Juego\": \"fantasía\",\r\n    \"clasificacionEdadJuego\": \"+7\"\r\n  }\r\n\r\n\r\n",
-                  "options": {
-                    "raw": {
-                      "language": "json"
-                    }
-                  }
-                },
-                "url": {
-                  "raw": "http://localhost:8080/api/v1/juegos",
-                  "protocol": "http",
-                  "host": [
-                    "localhost"
-                  ],
-                  "port": "8080",
-                  "path": [
-                    "api",
-                    "v1",
-                    "juegos"
-                  ]
-                }
-              },
-              "status": "Created",
-              "code": 201,
-              "_postman_previewlanguage": null,
-              "header": [
-                {
-                  "key": "Content-Type",
-                  "value": "application/json"
-                },
-                {
-                  "key": "Transfer-Encoding",
-                  "value": "chunked"
-                },
-                {
-                  "key": "Date",
-                  "value": "Wed, 20 May 2026 20:36:54 GMT"
-                },
-                {
-                  "key": "Keep-Alive",
-                  "value": "timeout=60"
-                },
-                {
-                  "key": "Connection",
-                  "value": "keep-alive"
-                }
-              ],
-              "cookie": [],
-              "body": "{\n    \"idJuego\": 2,\n    \"nombreJuego\": \"Minecraft\",\n    \"descripcionJuego\": \"Juego de construcción y supervivencia donde explorar mundos abiertos, recolectar recursos y crear todo tipo de estructuras solo o con amigos.\",\n    \"genero1Juego\": \"acción\",\n    \"genero2Juego\": \"aventura\",\n    \"genero3Juego\": \"fantasía\",\n    \"clasificacionEdadJuego\": \"+7\",\n    \"listAnime\": null\n}"
-            },
-            {
-              "name": "Juego 5",
-              "originalRequest": {
-                "method": "POST",
-                "header": [],
-                "body": {
-                  "mode": "raw",
-                  "raw": " {\r\n    \"nombreJuego\": \"Dark Souls 3\",\r\n    \"descripcionJuego\": \"RPG lineal que se centra en combatir con jefes complicados y explorar un ambiente sombrío.\",\r\n    \"genero1Juego\": \"acción\",\r\n    \"genero2Juego\": \"aventura\",\r\n    \"genero3Juego\": \"fantasía\",\r\n    \"clasificacionEdadJuego\": \"+18\"\r\n  }\r\n",
-                  "options": {
-                    "raw": {
-                      "language": "json"
-                    }
-                  }
-                },
-                "url": {
-                  "raw": "http://localhost:8080/api/v1/juegos",
-                  "protocol": "http",
-                  "host": [
-                    "localhost"
-                  ],
-                  "port": "8080",
-                  "path": [
-                    "api",
-                    "v1",
-                    "juegos"
-                  ]
-                }
-              },
-              "status": "Created",
-              "code": 201,
-              "_postman_previewlanguage": null,
-              "header": [
-                {
-                  "key": "Content-Type",
-                  "value": "application/json"
-                },
-                {
-                  "key": "Transfer-Encoding",
-                  "value": "chunked"
-                },
-                {
-                  "key": "Date",
-                  "value": "Wed, 20 May 2026 20:37:48 GMT"
-                },
-                {
-                  "key": "Keep-Alive",
-                  "value": "timeout=60"
-                },
-                {
-                  "key": "Connection",
-                  "value": "keep-alive"
-                }
-              ],
-              "cookie": [],
-              "body": "{\n    \"idJuego\": 3,\n    \"nombreJuego\": \"Dark Souls 3\",\n    \"descripcionJuego\": \"RPG lineal que se centra en combatir con jefes complicados y explorar un ambiente sombrío.\",\n    \"genero1Juego\": \"acción\",\n    \"genero2Juego\": \"aventura\",\n    \"genero3Juego\": \"fantasía\",\n    \"clasificacionEdadJuego\": \"+18\",\n    \"listAnime\": null\n}"
-            },
-            {
-              "name": "Juego 6",
-              "originalRequest": {
-                "method": "POST",
-                "header": [],
-                "body": {
-                  "mode": "raw",
-                  "raw": "  {\r\n    \"nombreJuego\": \"Elden Ring\",\r\n    \"descripcionJuego\": \"RPG de mundo abierto con combates desafiantes, exploración completamente libre y una ambientación oscura.\",\r\n    \"genero1Juego\": \"acción\",\r\n    \"genero2Juego\": \"aventura\",\r\n    \"genero3Juego\": \"fantasía\",\r\n    \"clasificacionEdadJuego\": \"+18\"\r\n  }\r\n",
-                  "options": {
-                    "raw": {
-                      "language": "json"
-                    }
-                  }
-                },
-                "url": {
-                  "raw": "http://localhost:8080/api/v1/juegos",
-                  "protocol": "http",
-                  "host": [
-                    "localhost"
-                  ],
-                  "port": "8080",
-                  "path": [
-                    "api",
-                    "v1",
-                    "juegos"
-                  ]
-                }
-              },
-              "status": "Created",
-              "code": 201,
-              "_postman_previewlanguage": null,
-              "header": [
-                {
-                  "key": "Content-Type",
-                  "value": "application/json"
-                },
-                {
-                  "key": "Transfer-Encoding",
-                  "value": "chunked"
-                },
-                {
-                  "key": "Date",
-                  "value": "Wed, 20 May 2026 20:38:52 GMT"
-                },
-                {
-                  "key": "Keep-Alive",
-                  "value": "timeout=60"
-                },
-                {
-                  "key": "Connection",
-                  "value": "keep-alive"
-                }
-              ],
-              "cookie": [],
-              "body": "{\n    \"idJuego\": 4,\n    \"nombreJuego\": \"Elden Ring\",\n    \"descripcionJuego\": \"RPG de mundo abierto con combates desafiantes, exploración completamente libre y una ambientación oscura.\",\n    \"genero1Juego\": \"acción\",\n    \"genero2Juego\": \"aventura\",\n    \"genero3Juego\": \"fantasía\",\n    \"clasificacionEdadJuego\": \"+18\",\n    \"listAnime\": null\n}"
-            },
-            {
-              "name": "Juego 7",
-              "originalRequest": {
-                "method": "POST",
-                "header": [],
-                "body": {
-                  "mode": "raw",
-                  "raw": "{\r\n    \"nombreJuego\": \"The Spike: Volleyball Story\",\r\n    \"descripcionJuego\": \"Juego de voleibol estilo anime con partidos rápidos, controles sencillos y un modo historia enfocado en la competencia y mejora del equipo.\",\r\n    \"genero1Juego\": \"deportes\",\r\n    \"genero2Juego\": \"drama\",\r\n    \"genero3Juego\": \"shonen\",\r\n    \"clasificacionEdadJuego\": \"+12\"\r\n  }\r\n\r\n",
-                  "options": {
-                    "raw": {
-                      "language": "json"
-                    }
-                  }
-                },
-                "url": {
-                  "raw": "http://localhost:8080/api/v1/juegos",
-                  "protocol": "http",
-                  "host": [
-                    "localhost"
-                  ],
-                  "port": "8080",
-                  "path": [
-                    "api",
-                    "v1",
-                    "juegos"
-                  ]
-                }
-              },
-              "status": "Created",
-              "code": 201,
-              "_postman_previewlanguage": null,
-              "header": [
-                {
-                  "key": "Content-Type",
-                  "value": "application/json"
-                },
-                {
-                  "key": "Transfer-Encoding",
-                  "value": "chunked"
-                },
-                {
-                  "key": "Date",
-                  "value": "Wed, 20 May 2026 20:39:38 GMT"
-                },
-                {
-                  "key": "Keep-Alive",
-                  "value": "timeout=60"
-                },
-                {
-                  "key": "Connection",
-                  "value": "keep-alive"
-                }
-              ],
-              "cookie": [],
-              "body": "{\n    \"idJuego\": 5,\n    \"nombreJuego\": \"The Spike: Volleyball Story\",\n    \"descripcionJuego\": \"Juego de voleibol estilo anime con partidos rápidos, controles sencillos y un modo historia enfocado en la competencia y mejora del equipo.\",\n    \"genero1Juego\": \"deportes\",\n    \"genero2Juego\": \"drama\",\n    \"genero3Juego\": \"shonen\",\n    \"clasificacionEdadJuego\": \"+12\",\n    \"listAnime\": null\n}"
-            },
-            {
-              "name": "Juego 8",
-              "originalRequest": {
-                "method": "POST",
-                "header": [],
-                "body": {
-                  "mode": "raw",
-                  "raw": " {\r\n    \"nombreJuego\": \"Marvel Rivals\",\r\n    \"descripcionJuego\": \"Shooter multijugador por equipos con héroes y villanos de Marvel, enfocado en combates rápidos, habilidades únicas y estrategia cooperativa.\",\r\n    \"genero1Juego\": \"acción\",\r\n    \"genero2Juego\": \"comedia\",\r\n    \"genero3Juego\": \"fantasia\",\r\n    \"clasificacionEdadJuego\": \"+14\"\r\n  }\r\n",
-                  "options": {
-                    "raw": {
-                      "language": "json"
-                    }
-                  }
-                },
-                "url": {
-                  "raw": "http://localhost:8080/api/v1/juegos",
-                  "protocol": "http",
-                  "host": [
-                    "localhost"
-                  ],
-                  "port": "8080",
-                  "path": [
-                    "api",
-                    "v1",
-                    "juegos"
-                  ]
-                }
-              },
-              "status": "Created",
-              "code": 201,
-              "_postman_previewlanguage": null,
-              "header": [
-                {
-                  "key": "Content-Type",
-                  "value": "application/json"
-                },
-                {
-                  "key": "Transfer-Encoding",
-                  "value": "chunked"
-                },
-                {
-                  "key": "Date",
-                  "value": "Wed, 20 May 2026 20:40:00 GMT"
-                },
-                {
-                  "key": "Keep-Alive",
-                  "value": "timeout=60"
-                },
-                {
-                  "key": "Connection",
-                  "value": "keep-alive"
-                }
-              ],
-              "cookie": [],
-              "body": "{\n    \"idJuego\": 6,\n    \"nombreJuego\": \"Marvel Rivals\",\n    \"descripcionJuego\": \"Shooter multijugador por equipos con héroes y villanos de Marvel, enfocado en combates rápidos, habilidades únicas y estrategia cooperativa.\",\n    \"genero1Juego\": \"acción\",\n    \"genero2Juego\": \"comedia\",\n    \"genero3Juego\": \"fantasia\",\n    \"clasificacionEdadJuego\": \"+14\",\n    \"listAnime\": null\n}"
-            },
-            {
-              "name": "Juego 9",
-              "originalRequest": {
-                "method": "POST",
-                "header": [],
-                "body": {
-                  "mode": "raw",
-                  "raw": "  {\r\n    \"nombreJuego\": \"Ace Attorney Trilogy\",\r\n    \"descripcionJuego\": \"Colección de novelas visuales de misterio donde investigas casos, recolectas pruebas y defiendes a tus clientes en juicios usando lógica y contradicciones.\",\r\n    \"genero1Juego\": \"thriller\",\r\n    \"genero2Juego\": \"drama\",\r\n    \"genero3Juego\": \"fantasía\",\r\n    \"clasificacionEdadJuego\": \"+12\"\r\n  }\r\n",
-                  "options": {
-                    "raw": {
-                      "language": "json"
-                    }
-                  }
-                },
-                "url": {
-                  "raw": "http://localhost:8080/api/v1/juegos",
-                  "protocol": "http",
-                  "host": [
-                    "localhost"
-                  ],
-                  "port": "8080",
-                  "path": [
-                    "api",
-                    "v1",
-                    "juegos"
-                  ]
-                }
-              },
-              "status": "Created",
-              "code": 201,
-              "_postman_previewlanguage": null,
-              "header": [
-                {
-                  "key": "Content-Type",
-                  "value": "application/json"
-                },
-                {
-                  "key": "Transfer-Encoding",
-                  "value": "chunked"
-                },
-                {
-                  "key": "Date",
-                  "value": "Wed, 20 May 2026 20:40:22 GMT"
-                },
-                {
-                  "key": "Keep-Alive",
-                  "value": "timeout=60"
-                },
-                {
-                  "key": "Connection",
-                  "value": "keep-alive"
-                }
-              ],
-              "cookie": [],
-              "body": "{\n    \"idJuego\": 7,\n    \"nombreJuego\": \"Ace Attorney Trilogy\",\n    \"descripcionJuego\": \"Colección de novelas visuales de misterio donde investigas casos, recolectas pruebas y defiendes a tus clientes en juicios usando lógica y contradicciones.\",\n    \"genero1Juego\": \"thriller\",\n    \"genero2Juego\": \"drama\",\n    \"genero3Juego\": \"fantasía\",\n    \"clasificacionEdadJuego\": \"+12\",\n    \"listAnime\": null\n}"
-            },
-            {
-              "name": "Juego 10",
-              "originalRequest": {
-                "method": "POST",
-                "header": [],
-                "body": {
-                  "mode": "raw",
-                  "raw": "  {\r\n    \"nombreJuego\": \"Final Fantasy XVI\",\r\n    \"descripcionJuego\": \"RPG de acción ambientado en el mundo de Valisthea, una tierra dividida por reinos que luchan por el control de los Cristales Madre, fuentes de magia y poder. La historia sigue a Clive Rosfield, un guerrero marcado por la tragedia y la venganza.\",\r\n    \"genero1Juego\": \"acción\",\r\n    \"genero2Juego\": \"fantasía\",\r\n    \"genero3Juego\": \"thriller\",\r\n    \"clasificacionEdadJuego\": \"+17\"\r\n  }\r\n",
-                  "options": {
-                    "raw": {
-                      "language": "json"
-                    }
-                  }
-                },
-                "url": {
-                  "raw": "http://localhost:8080/api/v1/juegos",
-                  "protocol": "http",
-                  "host": [
-                    "localhost"
-                  ],
-                  "port": "8080",
-                  "path": [
-                    "api",
-                    "v1",
-                    "juegos"
-                  ]
-                }
-              },
-              "status": "Created",
-              "code": 201,
-              "_postman_previewlanguage": null,
-              "header": [
-                {
-                  "key": "Content-Type",
-                  "value": "application/json"
-                },
-                {
-                  "key": "Transfer-Encoding",
-                  "value": "chunked"
-                },
-                {
-                  "key": "Date",
-                  "value": "Wed, 20 May 2026 20:40:47 GMT"
-                },
-                {
-                  "key": "Keep-Alive",
-                  "value": "timeout=60"
-                },
-                {
-                  "key": "Connection",
-                  "value": "keep-alive"
-                }
-              ],
-              "cookie": [],
-              "body": "{\n    \"idJuego\": 8,\n    \"nombreJuego\": \"Final Fantasy XVI\",\n    \"descripcionJuego\": \"RPG de acción ambientado en el mundo de Valisthea, una tierra dividida por reinos que luchan por el control de los Cristales Madre, fuentes de magia y poder. La historia sigue a Clive Rosfield, un guerrero marcado por la tragedia y la venganza.\",\n    \"genero1Juego\": \"acción\",\n    \"genero2Juego\": \"fantasía\",\n    \"genero3Juego\": \"thriller\",\n    \"clasificacionEdadJuego\": \"+17\",\n    \"listAnime\": null\n}"
-            }
-          ]
-        },
-        {
-          "name": "Actualizar juego",
-          "request": {
-            "method": "PUT",
-            "header": [],
-            "url": {
-              "raw": "http://localhost:8080/api/v1/juegos/1",
-              "protocol": "http",
-              "host": [
-                "localhost"
-              ],
-              "port": "8080",
-              "path": [
-                "api",
-                "v1",
-                "juegos",
-                "1"
-              ]
-            }
-          },
-          "response": []
-        },
-        {
-          "name": "Eliminar juego",
-          "request": {
-            "method": "DELETE",
-            "header": [],
-            "url": {
-              "raw": "http://localhost:8080/api/v1/juegos/1",
-              "protocol": "http",
-              "host": [
-                "localhost"
-              ],
-              "port": "8080",
-              "path": [
-                "api",
-                "v1",
-                "juegos",
-                "1"
-              ]
-            }
-          },
-          "response": []
-        }
-      ]
-    }
-  ]
+	"info": {
+		"_postman_id": "33645681-d998-4923-a988-8d3c549377eb",
+		"name": "crossMatch",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Animes",
+			"item": [
+				{
+					"name": "Lista anime",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/animes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"animes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar anime por ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/animes/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"animes",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Añadir anime",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n    \"nombreAnime\": \"Detective Conan\",\r\n    \"descripcionAnime\": \"Shinichi encoge por una droga, cambia de identidad aún niño  y busca recuperar su cuerpo.\",\r\n    \"genero1Anime\": \"aventura\",\r\n    \"genero2Anime\": \"drama\",\r\n    \"genero3Anime\": \"thriller\",\r\n    \"clasificacionEdadAnime\": \"14+\"\r\n  }\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/animes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"animes"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Anime 1",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": " {\r\n    \"nombreAnime\": \"Fullmetal Alchemist: Brotherhood\",\r\n    \"descripcionAnime\": \"Por un tabú alquímico, Ed pierde su cuerpo y Al es ligado a una armadura.\",\r\n    \"genero1Anime\": \"acción\",\r\n    \"genero2Anime\": \"fantasía\",\r\n    \"genero3Anime\": \"thriller\",\r\n    \"clasificacionEdadAnime\": \"14+\"\r\n  }\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/v1/animes",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"animes"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 20 May 2026 16:50:25 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"idAnime\": 1,\n    \"nombreAnime\": \"Fullmetal Alchemist: Brotherhood\",\n    \"descripcionAnime\": \"Por un tabú alquímico, Ed pierde su cuerpo y Al es ligado a una armadura.\",\n    \"genero1Anime\": \"acción\",\n    \"genero2Anime\": \"fantasía\",\n    \"genero3Anime\": \"thriller\",\n    \"clasificacionEdadAnime\": \"14+\",\n    \"listJuego\": null\n}"
+						},
+						{
+							"name": "Anime 2",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nombreAnime\": \"My Hero Academia\",\r\n    \"descripcionAnime\": \"En un mundo donde todos nacen con un Don, un joven sin él aspira a ser un gran héroe.\",\r\n    \"genero1Anime\": \"acción\",\r\n    \"genero2Anime\": \"shounen\",\r\n    \"genero3Anime\": \"fantasía\",\r\n    \"clasificacionEdadAnime\": \"14+\"\r\n  }\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/v1/animes",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"animes"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 20 May 2026 16:51:38 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"idAnime\": 2,\n    \"nombreAnime\": \"My Hero Academia\",\n    \"descripcionAnime\": \"En un mundo donde todos nacen con un Don, un joven sin él aspira a ser un gran héroe.\",\n    \"genero1Anime\": \"acción\",\n    \"genero2Anime\": \"shounen\",\n    \"genero3Anime\": \"fantasía\",\n    \"clasificacionEdadAnime\": \"14+\",\n    \"listJuego\": null\n}"
+						},
+						{
+							"name": "Anime 3",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "  {\r\n    \"nombreAnime\": \"Haikyu!!\",\r\n    \"descripcionAnime\": \"Hinata, voleibolista de baja estatura, debutó en secundaria.Inspirado por el 'Pequeño Gigante', el bajito Hinata debuta en el voleibol.\",\r\n    \"genero1Anime\": \"comedia\",\r\n    \"genero2Anime\": \"shounen\",\r\n    \"genero3Anime\": \"deportes\",\r\n    \"clasificacionEdadAnime\": \"14+\"\r\n  }\r\n\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/v1/animes",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"animes"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "Text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 20 May 2026 20:28:00 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"idAnime\": 3,\n    \"nombreAnime\": \"Haikyu!!\",\n    \"descripcionAnime\": \"Hinata, voleibolista de baja estatura, debutó en secundaria.Inspirado por el 'Pequeño Gigante', el bajito Hinata debuta en el voleibol.\",\n    \"genero1Anime\": \"comedia\",\n    \"genero2Anime\": \"shounen\",\n    \"genero3Anime\": \"deportes\",\n    \"clasificacionEdadAnime\": \"14+\",\n    \"listJuego\": null\n}"
+						},
+						{
+							"name": "Anime 4",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": " {\r\n    \"nombreAnime\": \"Attack on Titan\",\r\n    \"descripcionAnime\": \"La humanidad resiste tras gigantescas murallas que la protegen de titanes come-humanos.\",\r\n    \"genero1Anime\": \"thriller\",\r\n    \"genero2Anime\": \"drama\",\r\n    \"genero3Anime\": \"acción\",\r\n    \"clasificacionEdadAnime\": \"16+\"\r\n  }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/v1/animes",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"animes"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "Text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 20 May 2026 20:31:19 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"idAnime\": 4,\n    \"nombreAnime\": \"Attack on Titan\",\n    \"descripcionAnime\": \"La humanidad resiste tras gigantescas murallas que la protegen de titanes come-humanos.\",\n    \"genero1Anime\": \"thriller\",\n    \"genero2Anime\": \"drama\",\n    \"genero3Anime\": \"acción\",\n    \"clasificacionEdadAnime\": \"16+\",\n    \"listJuego\": null\n}"
+						},
+						{
+							"name": "Anime 5",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": " {\r\n    \"nombreAnime\": \"Black Clover\",\r\n    \"descripcionAnime\": \"En un mundo en el que la magia lo es todo, Asta y Yuno son dos niños que se encuentran abandonados el mismo día en una iglesia. Asta crece sin magia y Yuno crece demostrando tener unos grandes poderes mágicos\",\r\n    \"genero1Anime\": \"comedia\",\r\n    \"genero2Anime\": \"acción\",\r\n    \"genero3Anime\": \"fantasía\",\r\n    \"clasificacionEdadAnime\": \"14+\"\r\n  }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/v1/animes",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"animes"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "Text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 20 May 2026 20:31:50 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"idAnime\": 5,\n    \"nombreAnime\": \"Black Clover\",\n    \"descripcionAnime\": \"En un mundo en el que la magia lo es todo, Asta y Yuno son dos niños que se encuentran abandonados el mismo día en una iglesia. Asta crece sin magia y Yuno crece demostrando tener unos grandes poderes mágicos\",\n    \"genero1Anime\": \"comedia\",\n    \"genero2Anime\": \"acción\",\n    \"genero3Anime\": \"fantasía\",\n    \"clasificacionEdadAnime\": \"14+\",\n    \"listJuego\": null\n}"
+						},
+						{
+							"name": "Anime 6",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": " {\r\n    \"nombreAnime\": \"JUJUTSU KAISEN\",\r\n    \"descripcionAnime\": \"Yuji Itadori conoce el mundo de las Maldiciones al tragarse el dedo del Rey de las Maldiciones.\",\r\n    \"genero1Anime\": \"acción\",\r\n    \"genero2Anime\": \"shounen\",\r\n    \"genero3Anime\": \"drama\",\r\n    \"clasificacionEdadAnime\": \"16+\"\r\n  }\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/v1/animes",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"animes"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "Text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 20 May 2026 20:32:18 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"idAnime\": 6,\n    \"nombreAnime\": \"JUJUTSU KAISEN\",\n    \"descripcionAnime\": \"Yuji Itadori conoce el mundo de las Maldiciones al tragarse el dedo del Rey de las Maldiciones.\",\n    \"genero1Anime\": \"acción\",\n    \"genero2Anime\": \"shounen\",\n    \"genero3Anime\": \"drama\",\n    \"clasificacionEdadAnime\": \"16+\",\n    \"listJuego\": null\n}"
+						},
+						{
+							"name": "Anime 7",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": " {\r\n    \"nombreAnime\": \"HunterXHunter\",\r\n    \"descripcionAnime\": \"La historia sigue a Gon Freecss, un joven que descubre que su padre, a quien creía muerto.\",\r\n    \"genero1Anime\": \"aventura\",\r\n    \"genero2Anime\": \"drama\",\r\n    \"genero3Anime\": \"acción\",\r\n    \"clasificacionEdadAnime\": \"+12\"\r\n  }\r\n\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/v1/animes",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"animes"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "Text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 20 May 2026 20:32:47 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"idAnime\": 7,\n    \"nombreAnime\": \"HunterXHunter\",\n    \"descripcionAnime\": \"La historia sigue a Gon Freecss, un joven que descubre que su padre, a quien creía muerto.\",\n    \"genero1Anime\": \"aventura\",\n    \"genero2Anime\": \"drama\",\n    \"genero3Anime\": \"acción\",\n    \"clasificacionEdadAnime\": \"+12\",\n    \"listJuego\": null\n}"
+						},
+						{
+							"name": "Anime 8",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "  {\r\n    \"nombreAnime\": \"SwordArt Online\",\r\n    \"descripcionAnime\": \"Atrapado en un juego de realidad virtual donde morir es real. Kirito y miles de jugadores caen atrapados en un juego donde morir es real.\" ,\r\n    \"genero1Anime\": \"fantasía\",\r\n    \"genero2Anime\": \"acción\",\r\n    \"genero3Anime\": \"shounen\",\r\n    \"clasificacionEdadAnime\": \"+12\"\r\n  }\r\n\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/v1/animes",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"animes"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "Text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 20 May 2026 20:33:10 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"idAnime\": 8,\n    \"nombreAnime\": \"SwordArt Online\",\n    \"descripcionAnime\": \"Atrapado en un juego de realidad virtual donde morir es real. Kirito y miles de jugadores caen atrapados en un juego donde morir es real.\",\n    \"genero1Anime\": \"fantasía\",\n    \"genero2Anime\": \"acción\",\n    \"genero3Anime\": \"shounen\",\n    \"clasificacionEdadAnime\": \"+12\",\n    \"listJuego\": null\n}"
+						},
+						{
+							"name": "Anime 9",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "  {\r\n    \"nombreAnime\": \"Berserk\",\r\n    \"descripcionAnime\": \"La historia sigue a Guts, un guerrero solitario marcado por un pasado brutal, mientras lucha contra criaturas demoníacas y enfrenta temas como la venganza, el destino y la supervivencia.\",\r\n    \"genero1Anime\": \"acción\",\r\n    \"genero2Anime\": \"fantasía\",\r\n    \"genero3Anime\": \"thriller\",\r\n    \"clasificacionEdadAnime\": \"+18\"\r\n  }\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/v1/animes",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"animes"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "Text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 20 May 2026 20:33:37 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"idAnime\": 9,\n    \"nombreAnime\": \"Berserk\",\n    \"descripcionAnime\": \"La historia sigue a Guts, un guerrero solitario marcado por un pasado brutal, mientras lucha contra criaturas demoníacas y enfrenta temas como la venganza, el destino y la supervivencia.\",\n    \"genero1Anime\": \"acción\",\n    \"genero2Anime\": \"fantasía\",\n    \"genero3Anime\": \"thriller\",\n    \"clasificacionEdadAnime\": \"+18\",\n    \"listJuego\": null\n}"
+						},
+						{
+							"name": "Anime 10",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": " {\r\n    \"nombreAnime\": \"Detective Conan\",\r\n    \"descripcionAnime\": \"Shinichi encoge por una droga, cambia de identidad aún niño  y busca recuperar su cuerpo.\",\r\n    \"genero1Anime\": \"aventura\",\r\n    \"genero2Anime\": \"drama\",\r\n    \"genero3Anime\": \"thriller\",\r\n    \"clasificacionEdadAnime\": \"14+\"\r\n  }\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/v1/animes",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"animes"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "Text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 20 May 2026 20:35:19 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"idAnime\": 10,\n    \"nombreAnime\": \"Detective Conan\",\n    \"descripcionAnime\": \"Shinichi encoge por una droga, cambia de identidad aún niño  y busca recuperar su cuerpo.\",\n    \"genero1Anime\": \"aventura\",\n    \"genero2Anime\": \"drama\",\n    \"genero3Anime\": \"thriller\",\n    \"clasificacionEdadAnime\": \"14+\",\n    \"listJuego\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "Actualizar anime",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/animes/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"animes",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar anime",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/animes/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"animes",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Juegos",
+			"item": [
+				{
+					"name": "Lista juego",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/juegos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"juegos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar juego por ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/juegos/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"juegos",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Añadir juego",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\r\n    \"nombreJuego\": \"Final Fantasy XVI\",\r\n    \"descripcionJuego\": \"RPG de acción ambientado en el mundo de Valisthea, una tierra dividida por reinos que luchan por el control de los Cristales Madre, fuentes de magia y poder. La historia sigue a Clive Rosfield, un guerrero marcado por la tragedia y la venganza.\",\r\n    \"genero1Juego\": \"acción\",\r\n    \"genero2Juego\": \"fantasía\",\r\n    \"genero3Juego\": \"thriller\",\r\n    \"clasificacionEdadJuego\": \"+17\"\r\n  }\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/juegos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"juegos"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Juego 1",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nombreJuego\": \"The witcher 3: Wild hunt\",\r\n    \"descripcionJuego\": \"Geralt de Rivia se ve enfrentado a su pasado tras recuperar la memoria, junto con la inesperada aparición de su hija adoptiva\",\r\n    \"genero1Juego\": \"drama\",\r\n    \"genero2Juego\": \"acción\",\r\n    \"genero3Juego\": \"fantasía\",\r\n    \"clasificacionEdadJuego\": \"+18\"\r\n  }\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/v1/juegos",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"juegos"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 20 May 2026 16:57:12 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"idJuego\": 1,\n    \"nombreJuego\": \"The witcher 3: Wild hunt\",\n    \"descripcionJuego\": \"Geralt de Rivia se ve enfrentado a su pasado tras recuperar la memoria, junto con la inesperada aparición de su hija adoptiva\",\n    \"genero1Juego\": \"drama\",\n    \"genero2Juego\": \"acción\",\n    \"genero3Juego\": \"fantasía\",\n    \"clasificacionEdadJuego\": \"+18\",\n    \"listAnime\": null\n}"
+						},
+						{
+							"name": "Juego 2",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nombreJuego\": \"Clair Obscur: Expedition 33\",\r\n    \"descripcionJuego\": \"La historia sigue a gustave y su equipo en una misión por destruir a la “pintora”, una entidad que cada año borra de la existencia a personas de cierta edad\",\r\n    \"genero1Juego\": \"acción\",\r\n    \"genero2Juego\": \"fantasía\",\r\n    \"genero3Juego\": \"drama\",\r\n    \"clasificacionEdadJuego\": \"+16\"\r\n  }\r\n\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/v1/juegos",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"juegos"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 20 May 2026 16:57:29 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"idJuego\": 2,\n    \"nombreJuego\": \"Clair Obscur: Expedition 33\",\n    \"descripcionJuego\": \"La historia sigue a gustave y su equipo en una misión por destruir a la “pintora”, una entidad que cada año borra de la existencia a personas de cierta edad\",\n    \"genero1Juego\": \"acción\",\n    \"genero2Juego\": \"fantasía\",\n    \"genero3Juego\": \"drama\",\n    \"clasificacionEdadJuego\": \"+16\",\n    \"listAnime\": null\n}"
+						},
+						{
+							"name": "Juego 3",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "  {\r\n    \"nombreJuego\": \"Resident evil 4\",\r\n    \"descripcionJuego\": \"Leon S Kennedy vuelve a ser el protagonista de la saga una vez más pero ahora en españa, todo esto debido al extraño secuestro de la hija del presidente\",\r\n    \"genero1Juego\": \"acción\",\r\n    \"genero2Juego\": \"thriller\",\r\n    \"genero3Juego\": \"drama\",\r\n    \"clasificacionEdadJuego\": \"+17\"\r\n  }\r\n\r\n\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/v1/juegos",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"juegos"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "Text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 20 May 2026 20:36:23 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"idJuego\": 1,\n    \"nombreJuego\": \"Resident evil 4\",\n    \"descripcionJuego\": \"Leon S Kennedy vuelve a ser el protagonista de la saga una vez más pero ahora en españa, todo esto debido al extraño secuestro de la hija del presidente\",\n    \"genero1Juego\": \"acción\",\n    \"genero2Juego\": \"thriller\",\n    \"genero3Juego\": \"drama\",\n    \"clasificacionEdadJuego\": \"+17\",\n    \"listAnime\": null\n}"
+						},
+						{
+							"name": "Juego 4",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": " {\r\n    \"nombreJuego\": \"Minecraft\",\r\n    \"descripcionJuego\": \"Juego de construcción y supervivencia donde explorar mundos abiertos, recolectar recursos y crear todo tipo de estructuras solo o con amigos.\",\r\n    \"genero1Juego\": \"acción\",\r\n    \"genero2Juego\": \"aventura\",\r\n    \"genero3Juego\": \"fantasía\",\r\n    \"clasificacionEdadJuego\": \"+7\"\r\n  }\r\n\r\n\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/v1/juegos",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"juegos"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "Text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 20 May 2026 20:36:54 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"idJuego\": 2,\n    \"nombreJuego\": \"Minecraft\",\n    \"descripcionJuego\": \"Juego de construcción y supervivencia donde explorar mundos abiertos, recolectar recursos y crear todo tipo de estructuras solo o con amigos.\",\n    \"genero1Juego\": \"acción\",\n    \"genero2Juego\": \"aventura\",\n    \"genero3Juego\": \"fantasía\",\n    \"clasificacionEdadJuego\": \"+7\",\n    \"listAnime\": null\n}"
+						},
+						{
+							"name": "Juego 5",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": " {\r\n    \"nombreJuego\": \"Dark Souls 3\",\r\n    \"descripcionJuego\": \"RPG lineal que se centra en combatir con jefes complicados y explorar un ambiente sombrío.\",\r\n    \"genero1Juego\": \"acción\",\r\n    \"genero2Juego\": \"aventura\",\r\n    \"genero3Juego\": \"fantasía\",\r\n    \"clasificacionEdadJuego\": \"+18\"\r\n  }\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/v1/juegos",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"juegos"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "Text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 20 May 2026 20:37:48 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"idJuego\": 3,\n    \"nombreJuego\": \"Dark Souls 3\",\n    \"descripcionJuego\": \"RPG lineal que se centra en combatir con jefes complicados y explorar un ambiente sombrío.\",\n    \"genero1Juego\": \"acción\",\n    \"genero2Juego\": \"aventura\",\n    \"genero3Juego\": \"fantasía\",\n    \"clasificacionEdadJuego\": \"+18\",\n    \"listAnime\": null\n}"
+						},
+						{
+							"name": "Juego 6",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "  {\r\n    \"nombreJuego\": \"Elden Ring\",\r\n    \"descripcionJuego\": \"RPG de mundo abierto con combates desafiantes, exploración completamente libre y una ambientación oscura.\",\r\n    \"genero1Juego\": \"acción\",\r\n    \"genero2Juego\": \"aventura\",\r\n    \"genero3Juego\": \"fantasía\",\r\n    \"clasificacionEdadJuego\": \"+18\"\r\n  }\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/v1/juegos",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"juegos"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "Text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 20 May 2026 20:38:52 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"idJuego\": 4,\n    \"nombreJuego\": \"Elden Ring\",\n    \"descripcionJuego\": \"RPG de mundo abierto con combates desafiantes, exploración completamente libre y una ambientación oscura.\",\n    \"genero1Juego\": \"acción\",\n    \"genero2Juego\": \"aventura\",\n    \"genero3Juego\": \"fantasía\",\n    \"clasificacionEdadJuego\": \"+18\",\n    \"listAnime\": null\n}"
+						},
+						{
+							"name": "Juego 7",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nombreJuego\": \"The Spike: Volleyball Story\",\r\n    \"descripcionJuego\": \"Juego de voleibol estilo anime con partidos rápidos, controles sencillos y un modo historia enfocado en la competencia y mejora del equipo.\",\r\n    \"genero1Juego\": \"deportes\",\r\n    \"genero2Juego\": \"drama\",\r\n    \"genero3Juego\": \"shonen\",\r\n    \"clasificacionEdadJuego\": \"+12\"\r\n  }\r\n\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/v1/juegos",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"juegos"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "Text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 20 May 2026 20:39:38 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"idJuego\": 5,\n    \"nombreJuego\": \"The Spike: Volleyball Story\",\n    \"descripcionJuego\": \"Juego de voleibol estilo anime con partidos rápidos, controles sencillos y un modo historia enfocado en la competencia y mejora del equipo.\",\n    \"genero1Juego\": \"deportes\",\n    \"genero2Juego\": \"drama\",\n    \"genero3Juego\": \"shonen\",\n    \"clasificacionEdadJuego\": \"+12\",\n    \"listAnime\": null\n}"
+						},
+						{
+							"name": "Juego 8",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": " {\r\n    \"nombreJuego\": \"Marvel Rivals\",\r\n    \"descripcionJuego\": \"Shooter multijugador por equipos con héroes y villanos de Marvel, enfocado en combates rápidos, habilidades únicas y estrategia cooperativa.\",\r\n    \"genero1Juego\": \"acción\",\r\n    \"genero2Juego\": \"comedia\",\r\n    \"genero3Juego\": \"fantasia\",\r\n    \"clasificacionEdadJuego\": \"+14\"\r\n  }\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/v1/juegos",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"juegos"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "Text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 20 May 2026 20:40:00 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"idJuego\": 6,\n    \"nombreJuego\": \"Marvel Rivals\",\n    \"descripcionJuego\": \"Shooter multijugador por equipos con héroes y villanos de Marvel, enfocado en combates rápidos, habilidades únicas y estrategia cooperativa.\",\n    \"genero1Juego\": \"acción\",\n    \"genero2Juego\": \"comedia\",\n    \"genero3Juego\": \"fantasia\",\n    \"clasificacionEdadJuego\": \"+14\",\n    \"listAnime\": null\n}"
+						},
+						{
+							"name": "Juego 9",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "  {\r\n    \"nombreJuego\": \"Ace Attorney Trilogy\",\r\n    \"descripcionJuego\": \"Colección de novelas visuales de misterio donde investigas casos, recolectas pruebas y defiendes a tus clientes en juicios usando lógica y contradicciones.\",\r\n    \"genero1Juego\": \"thriller\",\r\n    \"genero2Juego\": \"drama\",\r\n    \"genero3Juego\": \"fantasía\",\r\n    \"clasificacionEdadJuego\": \"+12\"\r\n  }\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/v1/juegos",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"juegos"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "Text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 20 May 2026 20:40:22 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"idJuego\": 7,\n    \"nombreJuego\": \"Ace Attorney Trilogy\",\n    \"descripcionJuego\": \"Colección de novelas visuales de misterio donde investigas casos, recolectas pruebas y defiendes a tus clientes en juicios usando lógica y contradicciones.\",\n    \"genero1Juego\": \"thriller\",\n    \"genero2Juego\": \"drama\",\n    \"genero3Juego\": \"fantasía\",\n    \"clasificacionEdadJuego\": \"+12\",\n    \"listAnime\": null\n}"
+						},
+						{
+							"name": "Juego 10",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "  {\r\n    \"nombreJuego\": \"Final Fantasy XVI\",\r\n    \"descripcionJuego\": \"RPG de acción ambientado en el mundo de Valisthea, una tierra dividida por reinos que luchan por el control de los Cristales Madre, fuentes de magia y poder. La historia sigue a Clive Rosfield, un guerrero marcado por la tragedia y la venganza.\",\r\n    \"genero1Juego\": \"acción\",\r\n    \"genero2Juego\": \"fantasía\",\r\n    \"genero3Juego\": \"thriller\",\r\n    \"clasificacionEdadJuego\": \"+17\"\r\n  }\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/v1/juegos",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"juegos"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "Text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 20 May 2026 20:40:47 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"idJuego\": 8,\n    \"nombreJuego\": \"Final Fantasy XVI\",\n    \"descripcionJuego\": \"RPG de acción ambientado en el mundo de Valisthea, una tierra dividida por reinos que luchan por el control de los Cristales Madre, fuentes de magia y poder. La historia sigue a Clive Rosfield, un guerrero marcado por la tragedia y la venganza.\",\n    \"genero1Juego\": \"acción\",\n    \"genero2Juego\": \"fantasía\",\n    \"genero3Juego\": \"thriller\",\n    \"clasificacionEdadJuego\": \"+17\",\n    \"listAnime\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "Actualizar juego",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/juegos/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"juegos",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar juego",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/juegos/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"juegos",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Clima",
+			"item": [
+				{
+					"name": "Llamar clima",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/clima",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"clima"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Llamar clima",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/v1/clima",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"clima"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 22 May 2026 17:22:16 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"current_weather\": {\n        \"temperature\": 14.8,\n        \"windspeed\": 4.3\n    }\n}"
+						}
+					]
+				}
+			]
+		}
+	]
 }
