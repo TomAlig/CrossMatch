@@ -143,4 +143,6 @@ Se corrigieron commits asociados a usuarios incorrectos.
 
 **anabarcab-wq** - 22/05/2026 - Se actualiza postman agregando WeatherAPI.
 
+**TomAlig** - 03/06/2026 - Se agregan bases para Swagger y para Spring Security.
+
 </details>
