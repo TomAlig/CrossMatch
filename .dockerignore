@@ -1,8 +1,6 @@
-target
+# Ignora la build local y los archivos de base de datos.
+target/
+build/
+mysql_data/
 .git
-.github
-.vscode
-test_output.txt
-README.md
-postman
 *.log

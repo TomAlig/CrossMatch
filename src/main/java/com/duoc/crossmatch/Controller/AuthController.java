@@ -4,7 +4,15 @@ import com.duoc.crossmatch.Dto.AuthResponse;
 import com.duoc.crossmatch.Model.Usuario;
 import com.duoc.crossmatch.Repository.UsuarioRepository;
 import com.duoc.crossmatch.Security.JwtUtil;
+
+import io.swagger.v3.oas.models.Components;
+import io.swagger.v3.oas.models.OpenAPI;
+import io.swagger.v3.oas.models.security.SecurityRequirement;
+import io.swagger.v3.oas.models.security.SecurityScheme;
+
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -79,6 +87,24 @@ public class AuthController {
 
         } catch (BadCredentialsException e) {
             return ResponseEntity.status(HttpStatus.UNAUTHORIZED).build();
+        }
+    }
+
+    @Configuration
+public class SwaggerConfig {
+
+    @Bean
+    public OpenAPI customOpenAPI() {
+        return new OpenAPI()
+            // Agrega el candado global de autenticación en la interfaz de Swagger
+            .addSecurityItem(new SecurityRequirement().addList("BearerAuth"))
+            .components(new Components()
+                // Define que se utilizará un token JWT tipo Bearer
+                .addSecuritySchemes("BearerAuth", new SecurityScheme()
+                    .name("BearerAuth")
+                    .type(SecurityScheme.Type.HTTP)
+                    .scheme("bearer")
+                    .bearerFormat("JWT")));
         }
     }
 }
