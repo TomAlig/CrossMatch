@@ -139,10 +139,23 @@ Se corrigieron commits asociados a usuarios incorrectos.
 
 **TomAlig, anabarcab-wq y carlossepulvedadiaz** - 15/05/2026 - Se añade un DTO sin utilizar y uno para la api externa, sus respectivos service, controller y config y un manejo de excepciones general con @RestControllerAdvice. Además se hace la primera versión de la colección de Postman, (10 de anime y 10 de juegos) en principio no funcional.
 
+
 **anabarcab-wq** - 20/05/2026 - Se actualiza postman agregando el CRUD actual y se comprueba su funcionamiento.
+
 
 **anabarcab-wq** - 22/05/2026 - Se actualiza postman agregando WeatherAPI.
 
+
 **TomAlig** - 03/06/2026 - Se agregan bases para Swagger y para Spring Security.
+
+
+**anabarcab-wq** - 09/06/2026 - Se agregan las correspondientes dependencias al pom.xml y el primer tester unitario de Juego.
+
+
+**carlossepulvedadiaz** - 12/06/2026 - Se agrega el resto de las 3 pruebas unitarias restantes y se comprueba su fincionamiento el cual fue existoso  y se añaden los archivos base de Docker.
+
+
+**TomAlig** - 19/06/2026 - Se realiza el cambio de la version 21 de java a 17, se hace arreglo de docker y se Inicia el proceso de implementacion de Swagger el cual consiste en la creacion de keys para el manejo de los permisos de usuarios, entre ellos ADMIN lo cual llevo a un correcto funcionamiento del proyecto.
+
 
 </details>
